@@ -55,7 +55,18 @@ vagrant up</pre>
 
     <h3>Source Code</h3>
     <section>
-      <p>This project is open-source, under <a href="https://github.com/stucco/stucco.github.io/blob/master/LICENSE.md">an MIT license</a>. All source code can be found at <a href="https://github.com/stucco/">https://github.com/stucco/</a>. Stucco is still a work in progress and not yet fully documented.
+      <p>This project is open-source, under <a href="https://github.com/stucco/stucco.github.io/blob/master/LICENSE.md">an MIT license</a>. All source code can be found at <a href="https://github.com/stucco/">https://github.com/stucco/</a>.
+      </p>
+      <p>The main components of the system are:
+        <ul>
+          <li><a href="https://github.com/stucco/collectors">Collectors</a>: Suite of data collectors for scheduling and gathering structured and unstructured documents.</li>
+          <li><a href="https://github.com/stucco/rt">RT</a>: Real-time processing engine that extracts domain concepts from documents and inserts those concepts into a knowledge graph.</li>
+          <li><a href="https://github.com/stucco/document-service">Document Service</a>: Storage service for text documents and metadata over an HTTP API. This is the repository for unprocessed documents.</li>
+          <li><a href="https://github.com/stucco/ui">UI</a>: Web application and API for interacting with the Stucco knowledge graph.</li>
+        </ul>
+        There are [Ansible roles](https://github.com/stucco?query=ansible) to facilitate installing each of these components. Stucco relies on [RabbitMQ](http://www.rabbitmq.com/) to pass data into the system, and [Titan](http://thinkaurelius.github.io/titan/) - a distributed graph database - to store the knowledge graph.
+      </p>
+      <p>Stucco is still a work in progress and not yet fully documented, but we do have some <a href="https://github.com/stucco/docs">Documentation</a>, although some may be out of date; we are in the progress of cleaning things up.
       </p>
     </section>
 
