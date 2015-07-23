@@ -49,19 +49,18 @@
     </p>
 
     <h4>Run a pre-configured demo VM</h4>
-    <p>To run a virtual machine locally, you just need to install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>. These instructions will pull the VM image from <a href="https://atlas.hashicorp.com/stucco">atlas.hashicorp.com/stucco</a>. To set up, open up a terminal and enter the following:
-      <pre>
-vagrant init stucco/demo
-# Edit the Vagrantfile as needed, see below.
-vagrant up
-      </pre>
-    If you want to forward the web port, and turn off shared folders (to prevent showing an error) modify the `Vagrantfile` before running `vagrant up`:
+    <p>To run a virtual machine locally, you just need to install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>. These instructions will pull the VM image from <a href="https://atlas.hashicorp.com/stucco">atlas.hashicorp.com/stucco</a>.
+    Create a `Vagrantfile` with the following contents:
       <pre>
 Vagrant.configure(2) do |config|
   config.vm.box = "stucco/demo"
   config.vm.network "forwarded_port", guest: 8000, host: 8000
   config.vm.synced_folder ".", "/vagrant", disabled: true
 end
+      </pre>
+    Then, open up a terminal and enter the following:
+      <pre>
+vagrant up
       </pre>
     Then you can open a web browser to <a href="http://localhost:8000/help">http://localhost:8000/help</a> and start looking at the data that has been pre-loaded into the VM. </p>
 
