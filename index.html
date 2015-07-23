@@ -56,12 +56,10 @@ Vagrant.configure(2) do |config|
   config.vm.box = "stucco/demo"
   config.vm.network "forwarded_port", guest: 8000, host: 8000
   config.vm.synced_folder ".", "/vagrant", disabled: true
-end
-      </pre>
+end</pre>
     Then, open up a terminal and enter the following:
       <pre>
-vagrant up
-      </pre>
+vagrant up</pre>
     Then you can open a web browser to <a href="http://localhost:8000/help">http://localhost:8000/help</a> and start looking at the data that has been pre-loaded into the VM. </p>
 
     <h4>Build your own VM</h4>
