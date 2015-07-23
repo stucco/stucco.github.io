@@ -44,11 +44,11 @@
 
     <h3>Getting Started</h3>
 
-    <h5>Demonstration Site</h5>
+    <h4>Demonstration Site</h4>
     <p>We have a demonstration site now available:  <a href="http://stucco.stanford.edu/">http://stucco.stanford.edu/</a>
     </p>
 
-    <h5>Run a VM</h5>
+    <h4>Run a pre-configured demo VM</h4>
     <p>To run a virtual machine locally, you just need to install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>. These instructions will pull the VM image from <a href="https://atlas.hashicorp.com/stucco">atlas.hashicorp.com/stucco</a>. To set up, open up a terminal and enter the following:
       <pre>
 vagrant init stucco/demo
@@ -65,7 +65,7 @@ end
       </pre>
     Then you can open a web browser to <a href="http://localhost:8000/help">http://localhost:8000/help</a> and start looking at the data that has been pre-loaded into the VM. </p>
 
-    <h5>Build your own VM</h5>
+    <h4>Build your own VM</h4>
     <p>To get started with a demonstration environment, you will need a Linux or Mac OS X host with at least 16GB of memory. We have tested on Mac OS X 10.9, Ubuntu 12.04, and CentOS 6. Install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>, and <a href="http://docs.ansible.com/intro_installation.html">Ansible</a> (<a href="http://docs.ansible.com/intro_installation.html#control-machine-requirements">Ansible requires Python 2.6</a>). Then, open up a terminal and enter the following:
       <pre>
 git clone https://github.com/stucco/dev-setup.git stucco
