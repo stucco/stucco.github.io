@@ -9,3 +9,8 @@ footer {
   text-align: center;
   margin: 30px;
 }
+
+a.header {
+  color: #333;
+  text-decoration: none;
+}
