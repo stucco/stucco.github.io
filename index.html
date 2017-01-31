@@ -44,8 +44,15 @@
 
     <h3><a class="header" name="started">Getting Started</a></h3>
 
-    <h4>Demonstration Site</h4>
-    <p>We have a demonstration site now available:  <a href="http://stucco.stanford.edu/">http://stucco.stanford.edu/</a>
+    <h4>Build your own VM</h4>
+    <p>To get started with a demonstration environment, you will need a Linux or Mac OS X host with at least 16GB of memory. We have tested on Mac OS X 10.9, Ubuntu 12.04, and CentOS 6. Install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>, and <a href="http://docs.ansible.com/intro_installation.html">Ansible</a> (<a href="http://docs.ansible.com/intro_installation.html#control-machine-requirements">Ansible requires Python 2.6</a>). Then, open up a terminal and enter the following:
+      <pre>
+git clone https://github.com/stucco/dev-setup.git stucco
+cd stucco
+vagrant up</pre>
+      Then you can open a web browser to <a href="http://10.10.10.100:8000/help">http://10.10.10.100:8000/help</a> and start looking at the data being collected (it takes a while to collect all of the data). For more detailed instructions, see the <a href="https://github.com/stucco/dev-setup/blob/master/README.md">dev-setup Readme</a>.
+    </p>
+    <p>If you run into any issues getting the demonstration working, please <a href="https://github.com/stucco/dev-setup/issues/new">submit an issue</a>.
     </p>
 
     <h4>Run a pre-configured demo VM</h4>
@@ -62,15 +69,8 @@ end</pre>
 vagrant up</pre>
     Then you can open a web browser to <a href="http://localhost:8000/help">http://localhost:8000/help</a> and start looking at the data that has been pre-loaded into the VM. </p>
 
-    <h4>Build your own VM</h4>
-    <p>To get started with a demonstration environment, you will need a Linux or Mac OS X host with at least 16GB of memory. We have tested on Mac OS X 10.9, Ubuntu 12.04, and CentOS 6. Install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>, and <a href="http://docs.ansible.com/intro_installation.html">Ansible</a> (<a href="http://docs.ansible.com/intro_installation.html#control-machine-requirements">Ansible requires Python 2.6</a>). Then, open up a terminal and enter the following:
-      <pre>
-git clone https://github.com/stucco/dev-setup.git stucco
-cd stucco
-vagrant up</pre>
-      Then you can open a web browser to <a href="http://10.10.10.100:8000/help">http://10.10.10.100:8000/help</a> and start looking at the data being collected (it takes a while to collect all of the data). For more detailed instructions, see the <a href="https://github.com/stucco/dev-setup/blob/master/README.md">dev-setup Readme</a>.
-    </p>
-    <p>If you run into any issues getting the demonstration working, please <a href="https://github.com/stucco/dev-setup/issues/new">submit an issue</a>.
+    <h4>Demonstration Site</h4>
+    <p>We have a demonstration site now available:  <a href="http://stucco.stanford.edu/">http://stucco.stanford.edu/</a>
     </p>
 
     <h3><a class="header" name="code">Source Code</a></h3>
